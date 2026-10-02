@@ -512,7 +512,7 @@ jobs:
       - run: pnpm test:smoke
       - name: Smoke evidence (including first failure)
         if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: smoke-evidence
           path: artifacts/smoke/
@@ -811,7 +811,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: node scripts/pack-install-gate.mjs
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: install-packages-${{ github.sha }}
           path: artifacts/install-packages/
@@ -882,7 +882,7 @@ jobs:
           pnpm gate:install "${args[@]}" 2>&1 | tee install-gate.log
       - name: Upload gate log on failure
         if: failure()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: install-gate-logs-${{ matrix.os }}-${{ matrix.scaffold }}
           path: install-gate.log
@@ -1017,7 +1017,7 @@ jobs:
           echo "e2e battery failed after 2 attempts"; exit 1
       - name: Upload server logs on failure
         if: failure()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: e2e-server-logs-${{ strategy.job-index }}
           path: /tmp/e2e-*.log
@@ -1200,7 +1200,7 @@ jobs:
         run: pnpm bench:gate
       - name: Upload benchmark results
         if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: bench-raw
           path: bench/raw/
