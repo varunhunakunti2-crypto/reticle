@@ -30,9 +30,9 @@
   "devDependencies": {
     "@iconify-json/heroicons-outline": "^1.2.1",
     "@iconify-json/heroicons-solid": "^1.2.1",
-    "@tanstack/query-core": "^5.103.2",
+    "@tanstack/query-core": "^5.104.0",
     "esbuild": "^0.28.2",
-    "jotai": "^3.0.0",
+    "jotai": "^3.0.1",
     "jsdom": "^30.0.1",
     "mobx": "^7.0.5",
     "pinia": "^4.0.3",

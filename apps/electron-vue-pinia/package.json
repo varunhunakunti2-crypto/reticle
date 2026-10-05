@@ -27,15 +27,15 @@
     "pinia": "^4.0.3"
   },
   "devDependencies": {
-    "@electron-toolkit/eslint-config-prettier": "3.0.0",
+    "@electron-toolkit/eslint-config-prettier": "3.0.1",
     "@electron-toolkit/eslint-config-ts": "^3.1.0",
     "@electron-toolkit/tsconfig": "^2.0.0",
     "@reticlehq/browser": "workspace:*",
     "@reticlehq/electron": "workspace:*",
     "@reticlehq/vite-plugin": "workspace:*",
-    "@types/node": "^26.6.2",
+    "@types/node": "^26.6.4",
     "@vitejs/plugin-vue": "^6.0.9",
-    "electron": "^44.5.0",
+    "electron": "^44.5.1",
     "electron-builder": "^26.0.12",
     "electron-vite": "^5.0.0",
     "eslint": "^9.39.1",
