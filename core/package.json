@@ -54,7 +54,7 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "fast-check": "^4.10.2",
+    "fast-check": "^4.10.3",
     "zod-to-json-schema": "^3.24.0"
   },
   "license": "Apache-2.0",
